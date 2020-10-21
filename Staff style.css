@@ -37,15 +37,11 @@ ul li a:hover {
 }
 
 .wrapper {
-  width: 100%;
-}
-
-.img-mercury {
-  display: none;
+  width: 190%;
 }
 
 .img-info {
-  width: 100%;
+  width: 190%;
 }
 
 .img-info h2{
@@ -65,24 +61,45 @@ ul li a:hover {
   line-height: 24px;
 }
 
-@media only screen and (min-width: 768px) {
-  .img-mercury {
-    display: block;
-    width: 100%;
-    padding-bottom: 30px;
-  }
+.wrapper {
+  width: 600px;
+  margin: 10px;
+}
 
-  .wrapper {
-    width: 600px;
-    margin: 0 auto;
-  }
+.img-info h2 {
+  padding: 20px 0px 0px;
+}
 
-  .img-info h2{
-    padding: 20px 0px 0px;
-  }
+.img-info p {
+  padding: 20px 0px 0px;
+}
 
-  .img-info p{
-    padding: 20px 0px 0px;
-  }
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
 
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+  width: 70%;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+  font-family: "Helvetica Neue";
+  color: #1e1e1e;
 }
